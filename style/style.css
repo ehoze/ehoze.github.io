@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins' ,sans-serif;
+}
+
+body
+{
+    background-color: #0A1931;
+}
+
+.flex
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-column
+{
+    flex-direction: column;
+}
+
+nav
+{
+    height: 8vh;
+    background-color: transparent;
+    color: black;
+    position: sticky;
+    z-index: 1;
+    /* font-family: 'Indie Flower', cursive; */
+    font-family: 'Poppins' ,sans-serif;
+    /* font-size: 36px; */
+}
+
+.navmenu
+{
+    font-size: 40px;
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
+    /* background-image: linear-gradient(to right, #0CCE6B, #2979ff); */
+    color: white;
+    text-shadow: #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+             #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px;
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+}
+
+.fa-caret-square-down
+{
+    transition: all 0.4s;
+}
+
+.navmenu:after 
+{    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: relative;
+    background: white;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+.navmenu:hover:after 
+{ 
+    width: 200%; 
+    left: -50%; 
+}
+
+button
+{
+    background-color: transparent;
+    border: none;
+}
+
+
+header
+{
+    color: black;
+    height: 92vh;
+    font-family: 'Poppins' ,sans-serif;
+}
+
+
+#h1_header
+{
+    color: white;
+    text-shadow: #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+             #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 300;
+    font-size: 5rem;
+}
+
+header > p
+{
+    color: white;
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.indieflower
+{
+    font-family: 'Indie Flower', cursive;
+}
+
+.modal-bg
+{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* background-color: rgba(0, 0, 0, 0.4); */
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s;
+}
+
+.bg-active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal{
+    /* background-color: #0A1931; */
+    width: 30%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.modal ul{
+    font-family: 'Poppins' ,sans-serif;
+    list-style: none;
+}
+
+.modal li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+    margin-top: 10%;  
+    /* height: 40%; */
+}
+
+.modal a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    background-color: #fcc33f;
+    border-radius: 999px;
+    transition: all 0.4s ease-out;
+    padding: 20px 50px;
+    width: 40%;
+    text-align: center;
+    font-weight: 700;
+}
+
+.modal a:hover, a:active, a:focus{
+    background-color: #f8af00;
+    color: black;
+    outline: none;
+}
+
+.modal-close{
+    position: absolute;
+    color: white;
+    font-weight: 700;
+    font-size: 2rem;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+}
