@@ -34,6 +34,7 @@ nav
     z-index: 1;
     /* font-family: 'Indie Flower', cursive; */
     font-family: 'Poppins' ,sans-serif;
+    outline: none;
     /* font-size: 36px; */
 }
 
@@ -91,7 +92,7 @@ header
 
 #h1_header
 {
-    color: white;
+    color: whitesmoke;
     text-shadow: #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
              #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px;
     -webkit-font-smoothing: antialiased;

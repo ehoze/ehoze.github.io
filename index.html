@@ -18,7 +18,7 @@
     </nav>
     <header class="flex flex-column">
         <h1 id="h1_header">Hej, jestem <span style="font-weight: 600; color: #FFC947;">Eryk</span></h1>
-        <p>Zajmuję się tworzeniem stron internetowych</p>
+        <p id="h1_slicetext"></p>
     </header>
 
     <div class="modal-bg flex">
@@ -33,5 +33,26 @@
         </div>
     </div>
 </body>
+<script>
+    const title = "Zajmuję się tworzeniem stron internetowych 😉";
+    var z = 0;
+
+    console.log(z);
+
+        var h = document.createElement("p");
+        document.getElementById("h1_slicetext").appendChild(h);
+
+
+    function sliceText()
+    {
+        var y = z + 1;
+        var t = document.createTextNode(title.slice(z,y)); 
+        h.appendChild(t); 
+        z++;    
+        //document.body.innerHTML = title.slice(0,z);
+    }
+
+    setInterval(sliceText, 100);
+</script>
 <script src="js/menu.js"></script>
 </html>
