@@ -100,6 +100,7 @@ header
     -webkit-font-smoothing: antialiased;
     font-weight: 300;
     font-size: 5rem;
+    text-align: center;
 }
 
 header > p
