@@ -7,6 +7,7 @@ menuButton.addEventListener('click', function() {
     document.querySelector('.fa-caret-square-down').style.transform = "rotate(180deg)";
 });
 
+
 menuClose.addEventListener('click', function() {
     menuBg.classList.remove('bg-active');
     document.querySelector('.fa-caret-square-down').style.transform = "rotate(0deg)";
