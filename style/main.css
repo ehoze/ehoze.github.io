@@ -95,7 +95,7 @@ nav
     /* -webkit-background-clip: text; */
     /* -webkit-text-fill-color: transparent; */
     /* background-image: linear-gradient(to right, #0CCE6B, #2979ff); */
-    color: black;
+    
     text-shadow: #fff 0px 0px 1px,   #fff 0px 0px 1px,   #fff 0px 0px 1px,
              #fff 0px 0px 1px,   #fff 0px 0px 1px,   #fff 0px 0px 1px;
     -webkit-font-smoothing: antialiased;
@@ -182,7 +182,7 @@ nav
 
 .modal a{
     display: flex;
-    justify-content: space-between  ;
+    justify-content: space-between;
     align-items: center;
     text-decoration: none; 
     color: white;
@@ -190,6 +190,7 @@ nav
     background-color: hsl(0, 0%, 13%);
     border-radius: 90px;
     transition: all 0.4s ease-out;
+    text-align: center;
     padding: 20px 30px;
     width: 60%;
     font-weight: 700;
@@ -217,4 +218,23 @@ nav
     top: 0px;
     right: 0px;
     cursor: pointer;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 600px) 
+{
+    .modal a
+    {
+        width: 100%;
+    }
+    .modal li
+    {
+        /* justify-content: stretch; */
+        /* align-items: stretch; */
+    }
+    .modal a i
+    {
+        font-size: 16px;
+    }
 }
