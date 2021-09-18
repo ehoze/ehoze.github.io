@@ -8,7 +8,7 @@ header
 
 .header_text
 {
-    height: 50%;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -25,10 +25,14 @@ header
     text-align: center;
 }
 
-.first_section
+.portfolio_section
 {
     height: 100vh;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
 }
 
 span .fab
@@ -50,7 +54,7 @@ span a
 
 .header_underblock
 {
-    height: 50%;
+    height: 40%;
     width: 100%;
     color: white;
     display: flex;
@@ -131,7 +135,7 @@ span a
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .lower_section
@@ -142,8 +146,16 @@ span a
 .text_section
 {
     font-family: 'Courier New', Courier, monospace;
+    height: 50%;
     width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    /* padding-bottom: 100%; */
 }
+
+
 
 .text_section h1
 {
@@ -151,14 +163,8 @@ span a
     font-family: 'Lato', sans-serif;
     font-size: 32px;
     font-weight: 300;
-    padding: 0px 0px 0px 0px;
-    /* margin: 10px 0; */
+    transition: all 0.3s;
 }
-
-/* .text_section h1::first-letter
-{
-    color: white;
-} */
 
 .text_section p
 {
@@ -173,6 +179,7 @@ span a
 .img_section
 {
     width: 40%; 
+    position: relative;
 }
 
 .img_section img
@@ -180,6 +187,7 @@ span a
     width: 90%;
     height: 100%;
     position: relative;
+    display: block;
 }
 
 .img_overlay {
@@ -187,30 +195,62 @@ span a
     bottom: 100%;
     left: 0;
     right: 0;
-    background-color: #008CBA;
+    background-color: hsla(0, 0%, 0%, 0.397);
     overflow: hidden;
-    width: 100%;
+    width: 90%;
     height: 0;
     transition: .5s ease;
   }
 
 .overlay_text 
 {
-    white-space: nowrap; 
+    /* white-space: nowrap;  */
     color: white;
     font-size: 20px;
+    visibility: hidden;
+    opacity: 0;
+    text-shadow: 0px 0px 1px #000, 0px 0px 1px #000;
     position: absolute;
     overflow: hidden;
     top: 50%;
     left: 50%;
+    transition: all 0.3s;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 }
 
-img:hover .img_overlay 
+a:hover .img_overlay 
 {
     bottom: 0;
     height: 100%;
+}
+
+a:hover .overlay_text
+{
+    visibility: visible;
+    opacity: 100;
+}
+
+a
+{
+    color: #FFC947;
+    text-decoration: none;
+}
+
+.text_section > h1:hover
+{
+    transform:scale(1.1);
+    color: #fdc541;
+}
+
+#last > h1::before, #last > h1::after
+{
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f005";
+    top: 0;
+    -webkit-font-smoothing: antialiased;
+    color: yellow; 
 }
 
 @media only screen and (max-width: 600px)
@@ -223,7 +263,7 @@ img:hover .img_overlay
     {
         margin-top: 1rem;
         font-size: 16px;
-        width: 50%;
+        width: 60%;
         text-align: center;
     }
 
@@ -231,10 +271,65 @@ img:hover .img_overlay
     {
         height: 50%;
         width: 100%;
-        background-color: chocolate;
+        background-color: black;
         display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: flex-end;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text_section
+    {
+        width: 95%;
+        height: 100%;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        position: relative;
+    }
+    .text_section h1
+    {
+        color: #FFC947;
+        font-family: 'Lato', sans-serif;
+        font-size: 22px;
+        font-weight: 300;
+        padding: 0px 0px 0px 0px;
+        /* margin: 10px 0; */
+    }
+
+    /* .text_section h1::first-letter
+    {
+        color: white;
+    } */
+
+    .text_section p
+    {
+        color: #adb7bd;
+        font-family: 'Lucida Sans', Arial, sans-serif;
+        font-size: 16px;
+        /* line-height: 26px; */
+        text-indent: 10px;
+        padding: 0px 10px 0px 10px;
+    }
+
+    .img_section
+    {
+        display: none;
+        /* width: 50%; */
+        /* height: 20vh; */
+    }
+
+    a
+    {
+        font-weight: 700;
+    }
+
+    .text_section h1::before
+    {
+        font-family: "Font Awesome 5 Free"; 
+        font-weight: 900; 
+        content: "\f061";
+        top: 0;
+        -webkit-font-smoothing: antialiased;
+        color: white;
     }
 }

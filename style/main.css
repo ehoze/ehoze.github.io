@@ -92,13 +92,12 @@ nav
 .navmenu
 {
     font-size: 40px;
-    /* -webkit-background-clip: text; */
-    /* -webkit-text-fill-color: transparent; */
-    /* background-image: linear-gradient(to right, #0CCE6B, #2979ff); */
-    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, #0CCE6B, #2979ff);
     text-shadow: #fff 0px 0px 1px,   #fff 0px 0px 1px,   #fff 0px 0px 1px,
              #fff 0px 0px 1px,   #fff 0px 0px 1px,   #fff 0px 0px 1px;
-    -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased; 
     cursor: pointer;
 }
 
