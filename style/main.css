@@ -181,7 +181,7 @@ nav
 
 .modal a{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     text-decoration: none; 
     color: white;
@@ -219,18 +219,28 @@ nav
     cursor: pointer;
 }
 
+.orange
+{
+    color: #FFC947;
+}
+
 /* RESPONSIVE */
 
 @media only screen and (max-width: 600px) 
 {
+    .modal-close
+    {
+        right: 40%;
+    }
+
     .modal a
     {
-        width: 100%;
+        width: 150%;
     }
     .modal li
     {
-        /* justify-content: stretch; */
-        /* align-items: stretch; */
+        /* justify-content: center; 
+        align-items:center; */
     }
     .modal a i
     {
