@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiko:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Amiko', sans-serif; */
+    font-family: 'Allison', cursive;
+}
+
+/* NAV */
+
+nav
+{
+    z-index: 100;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    background-color: #000000;
+}
+
+#nav_buttons
+{
+    color: white;
+    font-family: 'Allison', cursive;
+    font-size: 28px;
+    width: 500px;
+}
+
+#nav_buttons > li
+{
+    list-style-type: none;
+    margin: 20px;
+    float: left;
+    position: relative;
+    bottom: 10px;
+}
+
+a
+{
+    text-decoration: none;
+    color: white;
+}
+
+/* NAGŁÓWEK */
+
+header
+{
+    font-family: 'Allison', cursive;
+    height: 100vh;
+    /* width: 100vw; */
+    background-image: url("../assets/header.jpg");
+    background-size: cover;
+    background-position: top center;
+    text-align: center;
+    font-size: 72px;
+    color: white;
+}
+
+header > h3
+{
+    margin-bottom: 350px;
+}
+
+/* SEKCJA FOOD - 1 */
+
+#food1
+{
+    height: 100vh;
+}
+
+.food1_header
+{
+    height: 10%;
+    font-size: 64px;
+    /* text-shadow: 2px 2px 10px black; */
+    font-weight: 600;
+}
+
+.food1_block
+{
+    /* width: 100%; */
+    height: 45%;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.f1_block_img
+{
+    width: 40%;
+    height: 80% ;
+    flex-basis: 30%;
+    border: 4px groove black;
+}
+
+.f1_block_img > img
+{
+    max-width: 100%;
+    max-height: auto;
+}
+
+.f1_block_text
+{
+    margin: 10px;
+    width: 45%;
+    font-family: 'Amiko', sans-serif;
+}
+
+.f1_block_text > h1
+{
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 30px rgb(0, 0, 0);
+    font-size: 48px;
+}
+
+#f1_1img
+{
+    margin-right: 5px;
+    margin-bottom: 20px;
+    
+    
+}
+
+#f1_1img > img
+{
+    margin-left: 5px;
+    margin-top: 20px;
+}
+
+#f1_2img
+{
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+
+#f1_2img > img
+{
+    margin-left: -20px;
+    margin-top: -40px;
+}
+
+
+/* SEKCJA - FOOD MENU */
+
+#food_menu
+{
+    width: 100%;
+    justify-content: center;
+}
+
+#menu_container
+{
+    position: relative;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.menu_column
+{
+    flex: 20%;
+    max-width: 25%;
+    padding: 0 4px;
+    margin-bottom: 8px;
+}
+
+.menu_column > .menu_box > img
+{
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 300px;
+    height: 300px;
+}
+
+.menu_box img
+{
+    transition: 0.5s;
+    object-fit: cover;
+}
+
+.menu_box img:hover
+{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* The Modal (background) */
+.menu_modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 50px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .menu_modal-content {
+    margin: auto;
+    display: block;
+    width: 40%;
+    max-width: 600px;
+  }
+  
+  /* Caption of Modal Image */
+  #menu_caption {
+      font-size: 36px;
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation */
+  .menu_modal-content, #menu_caption {  
+    -webkit-animation-name: menu_zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: menu_zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes menu_zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes menu_zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+        position: absolute;
+        top: 50px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 72px;
+        font-weight: bold;
+        transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* Calculator Section */
+
+  #food_calculator
+  {
+      width: 100%;
+      height: 100vh;
+  }
+ 
+  .calculator-block, .calculator_column, .calculator_column, .calculator_row, .calculator_outcome
+  {
+    
+    font-family: 'Amiko', sans-serif;
+    text-align: center;
+  }
+
+  .calculator-block
+  {
+      width: 30%;
+      height: 80%;
+      border: 5px groove black;
+      background-color: #3d4543;
+  }
+
+    .calculator_column
+    {
+        margin: 5px;
+        height: auto;
+        width: 100%;
+    }
+
+    .calculator_column > button
+    {
+        width:40px;  
+        height:30px;  
+        border:none;  
+        border-radius:8px;  
+        margin-left:17px;  
+        cursor:pointer;  
+        border-top:2px solid transparent;  
+    }
+
+    .calculator_row
+    {
+        height: 80px;
+        width: 100%;
+        /* border: 3px solid black; */
+        border-radius: 6%;
+        margin: 3px;
+        text-align: center;
+    }
+
+    .calculator_outcome
+    { 
+        background-color:#222;  
+        width:220px;  
+        height: 30%;
+    }
+
+    .calculator_outcome input
+    {    
+        height: auto;
+        width: 100%;
+        color:black;  
+        background-color:#bccd95;  
+        font-size: 21px;  
+        text-align: right;  
+        font-family: 'Amiko', sans-serif;
+    }
+
+    .calculator_clear
+    {
+        color:white;  
+        background-color:#6f6f6f;  
+        border-bottom:black 2px solid;  
+        border-top:2px #6f6f6f solid;  
+    }
+
+    .calculator_clear:active
+    {
+        border-top:black 2px solid;  
+        border-bottom:2px #6f6f6f solid; 
+    }
+
+    .calculator_number
+    {
+        color:white;  
+        background-color: #303030;  
+        border-bottom:black 2px solid;  
+        border-top:2px 303030 solid; 
+    }
+
+    .calculator_number:active
+    {
+        border-top:black 2px solid;  
+        border-bottom:#303030 2px solid;    
+    }
+
+    .calculator_pink
+    {
+        color:black;  
+        background-color:#ff4561;  
+        border-bottom:black 2px solid; 
+    }
+
+    .calculator_pink:active
+    {
+        border-top:black 2px solid;  
+        border-bottom:#ff4561 2px solid; 
+    }
+
+    .calculator_orange
+    {
+        color:black;  
+        background-color: #FF9933;  
+        border-bottom:black 2px solid;  
+        border-top:2px #FF9933 solid; 
+    }
+
+    .calculator_orange:active  
+    {  
+        border-top:black 2px solid;  
+        border-bottom: #FF9933 2px solid;  
+    } 
+/* STOPKA */
+
+footer
+{
+    font-size: 16px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    /* border: 1px solid black; */
+    /* background-color: #000000; */
+}
+
+footer > a
+{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+footer > a > img
+{
+    max-height: 30px;
+}
+
+
+
+
+
+/* RESZTA */
+
+img 
+{
+    max-width: 100%;
+}
+
+.flex 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row
+{
+    flex-direction: row;
+}
+.column
+{
+    flex-direction: column;
+}
