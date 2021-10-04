@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+@keyframes menumovement
+{
+    0%
+    {
+        right: -600px;
+    }
+    100%
+    {
+        right: 31%;
+    }
+}
+
+@keyframes menumovementr
+{
+    0%
+    {
+        right: 31%;
+    }
+    100%
+    {
+        right: -600px;
+    }
+}
+
+body
+{
+    font-family: 'Crimson Text', serif;
+    color: rgb(249, 220, 92);
+    text-shadow: 2px 2px 2px black;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(49, 133, 252);
+}
+#text
+{
+    margin: 10px;
+}
+
+.button
+{
+    position: fixed;
+    background-color: transparent;
+    font-family: 'Fugaz One', cursive;
+    font-size: 72px;
+    border: none;
+    color: rgb(249, 220, 92);
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    text-shadow: 2px 2px 2px black;
+}
+
+a
+{
+  width: 100%;
+  text-decoration: none;
+  color: rgb(249, 220, 92);
+  font-family: 'Fugaz One', cursive;
+}
+
+#Slicer
+{
+    height:20px;
+    font-family: 'Fugaz One', cursive;
+    text-shadow: 2px 2px 2px black;
+    font-size: 16px;
+}
+
+#menu
+{
+  visibility: hidden;
+  right: 31%;
+  animation-play-state: running;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  vertical-align: middle;
+  width: 600px;
+  height: 100vh;
+  position: absolute;
+  width: 600px;
+  background-color: rgb(232, 72, 85);
+  text-shadow: 2px 2px 2px black;
+  font-size: 48px;
+}
+
+.side-menur-trigger
+{
+  right: 0px;
+  border: 0;
+  border-radius: 5px;
+  position: absolute;
+  z-index: inherit;
+  animation-play-state:running;
+  padding-right:20px;
+  font-size: 50px;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  background-color: transparent;
+  outline: none;
+}
+
+
+.hamburger{
+
+    visibility: hidden;
+    position: fixed;
+    z-index: 10;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+    transition: visibility 1s ease;
+    /* border: 3px solid #fff; */
+  }

@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body
+{
+    overflow-x: hidden;
+    font-family: 'Kaushan Script', cursive;
+    margin: 0px;
+    padding: 0px;
+}
+
+a
+{
+    color: black;
+    text-decoration: none;
+}
+
+#container1
+{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+#container2
+{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+#nav
+{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    height: 8vh;
+}
+
+#img_logo
+{   
+    display: flex;
+    float: left;
+    padding: 10px;   
+}
+
+#nav-opt
+{
+    display: flex;
+    position: relative;
+    padding: 0px;
+    margin-left: 30%;
+}
+
+
+#nav-opt2
+{
+    display: flex;
+    position: relative;
+    text-align: center;
+    padding: 0px;
+    margin-left: 30%;
+}
+
+/*  hrefy */
+.opt-box
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    font-size: 22px;
+    width: 70px;
+}
+
+.opt-box > a
+{
+    color: rgb(247, 136, 154);
+    text-decoration: none;
+}
+
+.opt-boxphone
+{
+    display: flex;
+    width: 160px;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* .opt-boxcash
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid black;
+    height: 40px;
+    width: 160px;
+} */
+
+
+
+.opt-boxcash-hover {
+    width: 160px;
+    color: black;
+    cursor: pointer;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid black;
+    background-size: 300% 100%;
+
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.opt-boxcash-hover:hover
+{
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    color: white;
+}
+
+.opt-boxcash-hover.color-1 {
+    background-image: linear-gradient(to right, #ffffff, #ffffff, #000000, #000000);
+}
+
+#view
+{
+    height: 92vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.view-image {
+    /* background-image: url("../assets/background.jpeg"); */
+    /* opacity: 0.6; */
+    background: linear-gradient(to bottom, rgba(255, 252, 50, 0.1), rgba(255, 252, 50, 0.25) ),url(../assets/background.jpeg);
+    height: 92vh;
+    width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+
+/* .view-image::after
+{
+    background-image: linear-gradient(to right, #f3ff4e, #ffef0e);
+} */
+
+.view-text 
+{
+    position: absolute;
+    line-height: 92vh;
+    font-size: 64px;
+    margin-left: 0px;
+    display: flex;
+    color: white;
+    text-shadow: 1px 2px 2px black;
+    float: left;
+}
+
+.view-text-button
+{
+    position: absolute;
+    margin-top: 150px;
+    font-size: 48px;
+    margin-left: 0px;
+    display: flex;
+    text-shadow: 1px 2px 2px black;
+    float: left;
+}
+
+.button
+{
+    font-family: 'Kaushan Script', cursive;
+    cursor: pointer;
+    font-size: 24px;
+    justify-content: center;
+    height: 50px;
+    border: 2px solid black;
+    background-color: transparent;
+    transition: 1s;
+}
+
+.button:hover
+{
+    background-color: black;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+#view-content
+{
+    display: flex;
+    flex-direction: row;
+    /* align-content: center; */
+    /* text-align: center; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    height: 65vh;
+    width: 100vw;
+}
+
+#text-area
+{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-100%, 10%);
+    height: 400px;
+    width: 500px;
+}
+
+#image-area
+{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(5%, 10%);
+    border: 10px solid rgb(243, 225, 60);
+    height: 400px;
+    width: 500px;
+}
+
+#image-area > img
+{
+    position: relative;
+    top: 20px;
+    left: 20px;
+    width: 500px;
+    height: 400px;
+}
+
+#view-footer
+{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    width: 100vw;
+    background-color: whitesmoke;
+    padding-bottom: 40px;
+}
+
+.row
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.margin
+{
+    margin-left: 50px;
+    border-radius: 10px;
+    font-weight: 0;
+}
+
+#searchbar
+{
+    padding-top: 40px;
+    display: flex;
+    margin-top: 10px;
+    width: 600px;
+}
+
+#search-icon
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 10%;
+    background-color: rgb(247, 136, 154);
+    border: 0.2px solid grey;
+}
+
+.input-footer
+{
+    border: 0.2px solid grey;
+    border-left: none;
+    font-family: 'Kaushan Script', cursive;
+    width: 100%;
+    font-size: 22px;
+    outline: none;
+    background-color: white;
+}
