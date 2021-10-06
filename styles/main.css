@@ -361,6 +361,7 @@ p {
 }
 
 #skills .skills_item {
+    min-height: 300px;
     flex-basis: 80%;
     display: flex;
     align-items: flex-start;
@@ -376,8 +377,28 @@ p {
     overflow: hidden;
 }
 
-#skills_web1 {
-    background-image: url(../assets/skills/web_design.jpg);
+#skills_html5 {
+    background-image: url(../assets/skills/html5.jpg);
+}
+
+#skills_css {
+    background-image: url(../assets/skills/css.jpg);
+}
+
+#skills_js {
+    background-image: url(../assets/skills/javascript.jpg);
+}
+
+#skills_php {
+    background-image: url(../assets/skills/php.jpg);
+}
+
+#skills_btst {
+    background-image: url(../assets/skills/bootstrap.jpg);
+}
+
+#skills_lrv {
+    background-image: url(../assets/skills/laravel.jpg);
 }
 
 #skills .skills_item::after {
@@ -389,7 +410,7 @@ p {
     width: 100%;
     border-radius: inherit;
     /* background-color: hsla(0, 0%, 0%, 0.6); */
-    background-image: linear-gradient(60deg, hsla(0, 0%, 0%, 0.7) 0%, hsla(0, 0%, 0%, 0.72) 100%);
+    background-image: linear-gradient(60deg, hsla(0, 0%, 0%, 0.4) 0%, hsla(0, 0%, 0%, 0.5) 100%);
     z-index: -1;
 }
 
@@ -473,6 +494,13 @@ p {
     font-weight: 500;
 }
 
+#projects .projects_item_info a
+{
+    color: black;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
 #projects .projects_item_img {
     flex-basis: 50%;
     height: 300px;
@@ -510,8 +538,8 @@ p {
 }
 
 #about .col_left {
-    width: 300px;
-    height: 200px;
+    width: 200px;
+    height: 300px;
 }
 
 #about .col_left .about_img {
@@ -521,18 +549,18 @@ p {
     position: relative;
 }
 
-#about .col_left .about_img img
+/* #about .col_left .about_img img
 {
-    object-position: 40%;
-}
+    object-position: -10%;
+} */
 
 #about .col_left .about_img::after {
     content: '';
     position: absolute;
     left: -33px;
     top: 19px;
-    height: 98%;
-    width: 98%;
+    height: 100%;
+    width: 100%;
     border: 7px solid var(--honey);
     z-index: -1;
 }
@@ -635,7 +663,7 @@ p {
 /* Footer Section */
 
 #footer {
-    background-color: rgb(15, 41, 80);
+    background-color: black;
     /* background-image: linear-gradient(60deg, hsl(240, 90%, 60%) 0%, hsl(240, 100%, 70%) 100%); */
 }
 
