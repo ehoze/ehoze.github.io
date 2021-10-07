@@ -142,10 +142,10 @@ p {
     transition: left .5s ease-out;
 }
 
-#header .nav_list ul a {
+#header .nav_list ul li a {
     font-size: 2rem;
-    font-weight: 500;
-    letter-spacing: .2rem;
+    font-weight: 300;
+    letter-spacing: .1rem;
     color: white;
     text-transform: uppercase;
     padding: 20px;
@@ -153,7 +153,12 @@ p {
     transition: all .3s ease;
 }
 
-#header .nav_list ul a::after {
+#header .nav_list ul li a.active {
+    color: var(--honey);
+    font-weight: 600;
+}
+
+#header .nav_list ul li a::after {
     content: attr(data-after);
     position: absolute;
     top: 50%;
@@ -914,10 +919,10 @@ p {
         display: inline-block;
     } 
 
-    #header .nav_list ul a
+    #header .nav_list ul li a
     {
         font-size: .8rem;
-        font-weight: 600;
+        font-weight: 300;
     }
 
     #header .nav_list ul a::after
