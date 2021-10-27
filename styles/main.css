@@ -255,7 +255,7 @@ p {
 
 /* Hero Section */
 #hero {
-    background-image: url(../assets/hero_bg.jpg);
+    background-image: url(../assets/hero_bg.webp);
     background-size: cover;
     background-position: top center;
     position: relative;
@@ -366,7 +366,7 @@ p {
 }
 
 #skills .skills_item {
-    min-height: 300px;
+    min-height: 387px;
     flex-basis: 80%;
     display: flex;
     align-items: flex-start;
@@ -383,27 +383,27 @@ p {
 }
 
 #skills_html5 {
-    background-image: url(../assets/skills/html5.jpg);
+    background-image: url(../assets/skills/html5.webp);
 }
 
 #skills_css {
-    background-image: url(../assets/skills/css.jpg);
+    background-image: url(../assets/skills/css.webp);
 }
 
 #skills_js {
-    background-image: url(../assets/skills/javascript.jpg);
+    background-image: url(../assets/skills/javascript.webp);
 }
 
 #skills_php {
-    background-image: url(../assets/skills/php.jpg);
+    background-image: url(../assets/skills/php.webp);
 }
 
 #skills_btst {
-    background-image: url(../assets/skills/bootstrap.jpg);
+    background-image: url(../assets/skills/bootstrap.webp);
 }
 
 #skills_lrv {
-    background-image: url(../assets/skills/laravel.jpg);
+    background-image: url(../assets/skills/laravel.webp);
 }
 
 #skills .skills_item::after {
@@ -499,6 +499,16 @@ p {
     font-weight: 500;
 }
 
+#projects .projects_item_info h5 {
+    margin: 10px;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+}
+
+#projects .projects_item_info h5::before {
+    content: '> ';
+}
+
 #projects .projects_item_info a
 {
     color: black;
@@ -590,10 +600,10 @@ p {
 }
 
 #about .col_right .cta {
-    margin-bottom: 50px;
+    margin-bottom: 5px;
     color: black;
     /* border: 2px solid black;  */
-    padding: 5px 30px;
+    padding: 5px 25px;
 }
 
 #about .col_right .cta:hover {
@@ -803,7 +813,7 @@ p {
 
     #projects .projects_item {
         flex-direction: row;
-        height: 400px;
+        height: 520px;
         margin: 0;
         width: 100%;
         border-radius: 0;
