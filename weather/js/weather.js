@@ -17,12 +17,32 @@ window.addEventListener('load', ()=> {
                 return response.json();
             })
             .then(data => {
-                const {temperature, summary, icon} = data.currently;
+                console.log(data);
+                const {temperature, icon} = data.currently;
+                let {summary} = data.currently;
                 //Set DOM Elements from API
                 let fToCel = (temperature - 32) * 5 / 9;
                 temperatureDegree.textContent = Math.floor(fToCel) + "°C";
-                temperatureDesc.textContent = summary;
                 Timezone.textContent = data.timezone;
+                if(summary == "Clear")
+                    summary = "Słonecznie";
+
+                else if(summary == "Mostly Cloudy")
+                    summary = "Przeważnie pochmurno";
+
+                else if(summary == "Overcast")
+                    summary = "Pochmurno";
+
+                else if(summary == "Light Rain")
+                    summary = "Lekki deszcz";
+
+                else if(summary == "Partly Cloudy")
+                    summary = "Częściowe zachmurzenia";
+
+                else if(summary == "Rainy")
+                    summary = "Deszczowo";
+                    
+                temperatureDesc.textContent = summary;
                 //Set Icon
                 setIcon(icon, document.querySelector('.icon'));
             });
