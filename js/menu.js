@@ -48,3 +48,7 @@ option.forEach((item, index) => {
         }
     });
 });
+
+// $("#hero").scroll(function() {
+        
+// });
