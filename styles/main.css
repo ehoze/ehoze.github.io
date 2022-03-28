@@ -3,6 +3,7 @@
 /* Variables */
 * {
     --honey: #F8B224;
+    /* --honey: #F910BB; */
 }
 
 /* End Variables */
@@ -85,13 +86,13 @@ p {
     background-color: var(--honey);
 }
 
-.brand h1 {
-    font-size: 2rem;
+.brand p.h1 {
+    /* font-size: 2rem; */
     text-transform: uppercase;
     color: white;
 }
 
-.brand h1 span {
+.brand p.h1 span {
     color: var(--honey);
 }
 
@@ -455,6 +456,10 @@ p {
     background-image: url(../assets/skills/laravel.webp);
 }
 
+#skills_seo {
+    background-image: url(../assets/skills/seo.webp);
+}
+
 #skills .skills_item::after {
     content: '';
     position: absolute;
@@ -474,7 +479,7 @@ p {
     margin-bottom: 5px;
 }
 
-.skills_icon h5 {
+.skills_icon p {
     font-weight: 300;
     font-size: 1rem;
 }
@@ -548,13 +553,14 @@ p {
     font-weight: 500;
 }
 
-#projects .projects_item_info h5 {
+#projects .projects_item_info p.projects_date--p {
     margin: 10px;
     font-weight: 500;
+    font-size: .8em;
     letter-spacing: 0.1px;
 }
 
-#projects .projects_item_info h5::before {
+#projects .projects_item_info p.projects_date--p::before {
     content: '> ';
 }
 
@@ -700,7 +706,7 @@ p {
 }
 
 #contact i {
-    font-size: 2rem;
+    font-size: 5rem;
     margin: 0 auto;
     margin-bottom: 10px;
 }
