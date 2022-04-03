@@ -51,6 +51,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .section_title {
@@ -124,6 +125,10 @@ p {
 
 #header .brand a h1 {
     font-size: 1rem;
+}
+
+#header .nav_list .lang-changer{
+    display: none;
 }
 
 #header .nav_list ul {
@@ -763,6 +768,10 @@ p {
     margin: 0 10px;
 }
 
+#footer .social_item a{
+    color: #F8B224;
+}
+
 #footer .social_item i {
     color: white;
     transition: all .3s ease;
@@ -835,6 +844,10 @@ p {
     }
 
     h1.section_title {
+        font-size: 4rem;
+    }
+
+    h2.section_title {
         font-size: 4rem;
     }
 
