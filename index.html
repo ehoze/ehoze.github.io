@@ -5,416 +5,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <script src="https://kit.fontawesome.com/3131841332.js" crossorigin="anonymous"></script> -->
-    <meta name="description" content="Portfolio Eryka Kucharskiego + CV. Początkujący programista, developer.">
-    <script src="font-awesome-pro.js"></script>
-    <link rel="shortcut icon" href="ehozeicon.ico" />
-    <link rel="stylesheet" href="styles/main.css">
-    <title>Portfolio i CV Eryk Kucharski - ehoze dev</title>
-</head>
-
+    <title>Eryk Kucharski - CV i Portfolio</title>
+    <meta name="description" content="Strona Eryka Kucharskiego, przedstawiająca jego CV oraz projekty">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="/js/font-awesome-pro.js"></script>
+    <!-- <link rel="stylesheet" href="node_modules/normalize.css/normalize.css"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/js/all.min.js"
+        integrity="sha512-jObRWaj/w03b6Dq1xdRBbWfH5QWAnKWGNC9KLNzTj6cCLJymt7atj08eQc5JSTh5IYHsP+0VPAvZhAWkmZLszg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <body>
-    <!-- Header -->
-
-    <section id="header">
-        <div class="header container">
-            <div class="nav_bar">
-                <div class="brand">
-                    <a href="#hero">
-                        <p class="h1">
-                            <span>E</span>ryk <span>K</span>ucharski
-                        </p>
-                    </a>
-                </div>
-                <div class="nav_list">
-                    <div class="hamburger">
-                        <div class="bar">
-
-                        </div>
-                    </div>
-                    <ul>
-                        <li>
-                            <a href="#hero" class="active" data-after="Start">Start</a>
-                        </li>
-                        <li>
-                            <a href="#skills" data-after="Umiejętności">Umiejętności</a>
-                        </li>
-                        <li>
-                            <a href="#projects" data-after="Projekty">Projekty</a>
-                        </li>
-                        <li>
-                            <a href="#about" data-after="O mnie">O mnie</a>
-                        </li>
-                        <li>
-                            <a href="#contact" data-after="Kontakt">Kontakt</a>
-                        </li>
-                    </ul>
-                    <button class="lang-changer">lang-changer</button>
-                </div>
-
+    <!-- <aside class="menu">
+        menu
+    </aside> -->
+    <section class="container" id="hero">
+        <h1 class="hero_animation">
+            <span>Portfolio i CV</span>
+            <span class="hero_animation-author">Eryk Kucharski<span></span></span>
+        </h1>
+    </section>
+    <section class="container" id="about">
+        <p class="entry-title">Troszkę o mnie</p>
+        <div class="about_container">
+            <div class="about_container-img"><img src="assets/images/ja.jpg" alt="Moje zdjęcie" title="Moje zdjęcie"></div>
+            <div class="about_container-description">
+                Jestem programistą z ponad rocznym stażem w branży SEO. Od jakiegoś czasu szukam pracy z nastawieniem na
+                tworzenie stron, czy aplikacji (C#) niżeli optymalizacja istniejących stron. Unikam kodu spaghetti,
+                więc staram się swój prowadzić schludnie. Poza siedzeniem przy komputerze, uczeniem się, pracy czy
+                graniu bardzo lubię też rozgrywać mecze siatkówki oraz spędzać czas na dworze. Szczególnie cenię spacery
+                w deszczowe wieczory. Jestem osobą otwartą
+                gotową na nowe wyzwania i chętną do podjęcia się pracy, dzięki której nabędę nowych zdolności!
             </div>
         </div>
     </section>
-
-    <!-- End Header -->
-
-    <!-- Hero Section Start -->
-
-    <section id="hero">
-        <div class="hero container">
-            <div>
-                <h1>Hej, <span></span></h1>
-                <h1>jestem <span></span></h1>
-                <h1>Eryk <span></span></h1>
-                <a href="#projects" type="button" class="cta">Portfolio</a>
+    <section class="container" id="portfolio">
+        <p class="entry-title">Moje projekty</p>
+    </section>
+    <section class="container" id="cv">
+        <p class="entry-title">CV</p>
+        <div class="cv_container">
+            <p><a href="assets/files/CV_Eryk_Kucharski_1405_PL.pdf" target="_blank">Do przeczytania</a></p>
+            <p><a href="assets/files/CV_Eryk_Kucharski_1405_PL.pdf" download>Pobierz PDF</a></p>
+        </div>
+    </section>
+    <section class="container" id="contact">
+        <p class="entry-title">Sociale i kontakt</p>
+        <p><a target="_blank" href="mailto:erykkucharski.ek@gmail.com"><i class="fa fa-envelope fa-8x"></i></a></p>
+        <div class="social_container">
+            <div class="social_container-box">
+                <a target="_blank" href="https://www.facebook.com/ehoze"><i class="fab fa-brands fa-facebook-f fa-8x"></i></a>
+            </div>
+            <div class="social_container-box">
+                <a target="_blank" href="https://github.com/ehoze"><i class="fab fa-brands fa-github-alt fa-8x"></i></a>
+            </div>
+            <div class="social_container-box">
+                <a target="_blank" href="https://instagram.com/ehoze_"><i class="fab fa-brands fa-linkedin fa-8x"></i></a>
+            </div>
+            <div class="social_container-box">
+                <a target="_blank" href="https://instagram.com/ehoze_"><i class="fab fa-brands fa-instagram fa-8x"></i></a>
+                <!-- <a href="https://discordapp.com/users/290888903169146880"><i class="fab fa-brands fa-discord"></i></a> -->
             </div>
         </div>
     </section>
-
-    <!-- Hero Section End -->
-
-    <!-- Skills Section -->
-    <section id="skills">
-        <div class="skills container">
-            <div class="skills_top">
-                <h2 class="section_title">
-                    <span>U</span>miejętności<i class="fas fa-brands fa-terminal"></i>
-                </h2>
-                <p>
-                    Jak czegoś nie wiem to się dowiem, bo nie ma kogoś, kto wie wszystko
-                </p>
-            </div>
-
-            <div class="skills_bottom">
-                <div class="skills_item" id="skills_html5">
-                    <h2>HTML</h2>
-                    <div class="skills_icon">
-                        <p>Stack Technologiczny</p>
-                        <i class="fab fa-brands fa-html5 fa-2x"></i>
-                    </div>
-                    <div class="skills_level">
-                        <span class="level__dot"></span>
-                        <span class="level__dot"></span>
-                        <span class="level__dot level_my"></span>
-                        <span class="level__dot"></span>
-                        <span class="level__dot"></span>
-                    </div>
-                    <!-- <p>
-                        Znajomości HTML'a nie ma co opisywać. Znam większość tagów łącznie z tymi z najnowszej wersji 5.
-                        Nie mam problemów z utworzeniem strony. Kod staram się pisać schludnie i zachowując zasady
-                        podziału strony na sekcje.
-                    </p> -->
-                </div>
-
-                <div class="skills_item" id="skills_css">
-                    <h2>CSS</h2>
-                    <div class="skills_icon">
-                        <p>Stack Technologiczny</p>
-                        <i class="fab fa-brands fa-css3-alt fa-2x"></i>
-                    </div>
-                    <div class="skills_level">
-                        <span class="level__dot"></span>
-                        <span class="level__dot"></span>
-                        <span class="level__dot level_my"></span>
-                        <span class="level__dot"></span>
-                        <span class="level__dot"></span>
-                    </div>
-                    <!-- <p>
-                        Lubię, gdy wszystko wygląda zgodnie z tym co sobie ustalę i w szczególności staram się by moje
-                        prace były responsywne.
-                        Jestem w stanie stworzyć stronę pod taki design, jaki zostanie narzucony.
-                    </p> -->
-                    <div class="skills_modal">
-                        <!-- touch the box -> popup -->
-                    </div>
-                </div>
-
-                <div class="skills_item" id="skills_js">
-                    <h2>JavaScript</h2>
-                    <div class="skills_icon">
-                        <p>Stack Technologiczny</p>
-                        <i class="fab fa-brands fa-js-square fa-2x"></i>
-                    </div>
-                    <div class="skills_level">
-                        <span class="level__dot"></span>
-                        <span class="level__dot level_my"></span>
-                        <span class="level__dot"></span>
-                        <span class="level__dot"></span>
-                        <span class="level__dot"></span>
-                    </div>
-                    <!-- <p>
-                        W JavaScriptcie czuję się całkiem pewnie. Nie mam problemów z tworzeniem funkcji i stylów.
-                        Bardziej skomplikowane zadania nie stanowią dla mnie szkopułu.
-                    </p> -->
-                </div>
-
-
-                <div class="skills_item" id="skills_php">
-                    <h2>PHP</h2>
-                    <div class="skills_icon">
-                        <p>Stack Technologiczny</p>
-                        <i class="fab fa-brands fa-php fa-2x"></i>
-                    </div>
-                    <div class="skills_level">
-                        <span class="level__dot"></span>
-                        <span class="level__dot level_my"></span>
-                        <span class="level__dot"></span>
-                        <span class="level__dot"></span>
-                        <span class="level__dot"></span>
-                    </div>
-                    <!-- <p>
-                        Tworzenie formularzy, nadawanie danych i zarządzanie nimi to nie problem. Posiadam doświadczenie
-                        także w MySQL. Póki co posiadam wiedzę na temat czystego PHP, bez dodatkowych framework'ów.
-                    </p> -->
-                </div>
-
-                <!-- <div class="skills_item" id="skills_btst">
-                    <h2>Bootstrap</h2>
-                    <div class="skills_icon">
-                        <p>Stack Technologiczny</p>
-                        <i class="fab fa-brands fa-bootstrap fa-2x"></i>
-                    </div>
-                    <div class="skills_level">
-                        <span class="level__dot"></span>
-                        <span class="level__dot level_my"></span>
-                        <span class="level__dot"></span>
-                        <span class="level__dot"></span>
-                        <span class="level__dot"></span>
-                    </div>
-                     <p>
-                        Używanie bootstrapa nie sprawia mi żadnych kłopotów, dołączanie go i używanie jego klas
-                        przychodzi z łatwością.
-                    </p> 
-            </div> -->
-
-                <div class="skills_item" id="skills_lrv">
-                    <h2>Laravel</h2>
-                    <div class="skills_icon">
-                        <p>Stack Technologiczny</p>
-                        <i class="fab fa-brands fa-laravel fa-2x"></i>
-                    </div>
-                    <div class="skills_level">
-                        <span class="level__dot"></span>
-                        <span class="level__dot level_my"></span>
-                        <span class="level__dot"></span>
-                        <span class="level__dot"></span>
-                        <span class="level__dot"></span>
-                    </div>
-                    <!-- <p>
-                        Z Laravelem miałem okazję zaprzyjaźnić się kilka miesięcy temu, gdy zaczynałem swój projekt
-                        szkolny "Świat Kursów". Posiadam ponadpodstawowe doświadczenie w tym języku.
-                    </p> -->
-                </div>
-
-                <!-- <div class="skills_item" id="skills_seo">
-                    <h2>SEO</h2>
-                    <div class="skills_icon">
-                        <p>Stack Technologiczny</p>
-                        <i class="fas fa-angel fa-2x"></i>
-                    </div>
-                    <div class="skills_level">
-                        <span class="level__dot"></span>
-                        <span class="level__dot"></span>
-                        <span class="level__dot level_my"></span>
-                        <span class="level__dot"></span>
-                        <span class="level__dot"></span>
-                    </div>
-                </div> -->
-
-                <!-- skills_item_set -->
-                <div class="skills_item_set" id="">
-                    <h2>Dodatkowe umiejętności</h2>
-                    <div class="skills_itemset_flex">
-                        <div class="skills_item_set_box">Optymalizacja pod kątem SEO</div>
-                        <div class="skills_item_set_box">Umiejętność korzystania z Bootstrap</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Skills Section -->
-
-    <!-- Work Experience Section -->
-
-    <section id="work_exp">
-        <div class="work_exp container">
-            <h2 class="section_title">Doświadczenie w pracy</h2>
-            <div class="">
-                <p>This will be filled soon!</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- End Work Experience Section -->
-
-    <!-- Projects Section -->
-
-    <section id="projects">
-        <div class="projects container">
-            <div class="projects_top">
-                <h1 class="section_title">
-                    <span>Mo</span>je pro<span>je</span>kty
-                </h1>
-            </div>
-
-            <div class="projects_bottom">
-                <div class="projects_item">
-                    <div class="projects_item_info">
-                        <h1>Portfolio</h1>
-                        <h3>Cel - Własne portfolio</h3>
-                        <p class="projects_date--p">11/09/2021 - Teraz</p>
-                        <p>
-                            Od tego roku postanowiłem szukać pracy ale żeby jakkolwiek się pokazać, a tym bardziej z
-                            dobrej strony, potrzebowałem portfolio. Więc uznałem, że je stworzę. Planuję je rozwijać już
-                            raczej do końca moich dni z corocznymi czy półrocznymi zmianami full-design'u. Chcę by to
-                            miejsce było moją wizytówką i oby jak najlepszą.
-                        </p>
-                    </div>
-
-                    <div class="projects_item_img">
-                        <img src="../assets/projects/projects_wizytowka.webp"
-                            alt="Złożona kartka - kartka oparta o ściane">
-                    </div>
-                </div>
-                <div class="projects_item">
-                    <div class="projects_item_info">
-                        <h1>"Świat Kursów"</h1>
-                        <h3>Cel - Udemy 2.0</h3>
-                        <p class="projects_date--p">14/02/2021 – 31/05/2021</p>
-                        <p>
-                            Przez kilka miesięcy tworzyłem projekt strony wzorowanej na <a
-                                href="https://udemy.com">Udemy</a>.
-                            Projekt nie został skończony w 100%. Pisany był w framework'u Laravela.
-                            Do ukończenia brakowało niewielu szlifów, jednakże wszystko, co chciałem, udało mi się
-                            zakończyć.
-                            Na stronie była możliwość zakupów, dodawania środków na konto, zakładania konta, zmieniania
-                            jego danych oraz funkcja powiadomień email.
-                            Dodatkowo także w pełni działający sklep i responsywny wygląd, a wszystko to podłączone pod
-                            bazę danych.
-                        </p>
-                    </div>
-
-                    <div class="projects_item_img">
-                        <img src="../assets/projects/projects_bg.webp"
-                            alt="Mężczyzna leżący na łóżku z laptopem i zeszytem">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- End Projects Section -->
-
-    <!-- About Section -->
-
-    <section id="about">
-        <div class="about container">
-            <div class="col_left">
-                <div class="about_img">
-                    <img src="assets/about/me.webp" alt="Zdjęcie przedstawiające autora">
-                </div>
-            </div>
-            <div class="col_right">
-                <h1 class="section_title">Trochę o <span>mnie</span></h1>
-                <h4>Front-End | Back-End Developer</h4>
-                <p>
-                    Jestem uczniem 4 klasy technikum. W roku 2021 udało mi się zdać pierwszą kwalifikację potwierdzającą
-                    moje umiejętności jako programista. Od kilku lat systematycznie uczę się różnych języków
-                    programowania, jednak najbardziej staram się ostatnio kręcić wokół tworzenia aplikacji webowych.
-                    Unikam kodu spaghetti, więc staram się swój prowadzić schludnie.
-                    Poza siedzeniem przy komputerze bardzo lubię też grać w siatkówkę i spędzać czas na dworze.
-                    Szczególnie cenię spacery w deszczowe wieczory.
-                    Jestem osobą otwartą i nie boję się wyzwań.
-                </p>
-                <a href="/assets/CV/Eryk_Kucharski.pdf" download="Eryk_Kucharski_CV" class="cta">Moje CV (PL)</a>
-                <a href="/assets/CV/Eric_Kucharski.pdf" download="Eryk_Kucharski_CV" class="cta">My CV (EN)</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- End About Section -->
-
-    <!-- Contact Section -->
-
-    <section id="contact">
-        <div class="contact container">
-            <div class="contact_top">
-                <h1 class="section_title">
-                    Informacje <span>kontaktowe</span>
-                </h1>
-            </div>
-
-            <div class="contact_bottom">
-
-                <div class="contact_item">
-                    <div class="icon"><i class="fa fa-solid fa-phone fa-2x"></i></div>
-                    <div class="contact_info">
-                        <h3>
-                            Telefon
-                        </h3>
-                        <h5>
-                            <a href="tel:+48 729246100">+48 729 246 100</a>
-                        </h5>
-                    </div>
-                </div>
-
-                <div class="contact_item">
-                    <div class="icon"><i class="fa fa-regular fa-at fa-2x"></i></div>
-                    <div class="contact_info">
-                        <h3>
-                            Email
-                        </h3>
-                        <h5>
-                            <a href="mailto:eryk_kucharski@tlen.pl">eryk_kucharski@tlen.pl</a>
-                        </h5>
-                    </div>
-                </div>
-
-                <div class="contact_item">
-                    <div class="icon"><i class="fab fa-brands fa-facebook-f fa-2x"></i></div>
-                    <div class="contact_info">
-                        <h3>
-                            Facebook
-                        </h3>
-                        <h5>
-                            <a href="https://facebook.com/ehoze" target="_blank">fb.com/ehoze</a>
-                        </h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- End Contact Section -->
-
-    <!-- Footer Section -->
-    <section id="footer">
-        <div class="footer container">
-            <div class="brand">
-                <h1><span>E</span>ryk <span>K</span>ucharski</h1>
-            </div>
-            <h2>
-                Moje socialki:
-            </h2>
-            <div class="social_icon">
-                <div class="social_item">
-                    <a href="https://facebook.com/ehoze"><i class="fab fa-brands fa-facebook-f"></i></a>
-                    <a href="https://github.com/ehoze"><i class="fab fa-brands fa-github-alt"></i></a>
-                    <a href="https://instagram.com/ehoze_"><i class="fab fa-brands fa-instagram"></i></a>
-                    <a href="https://discordapp.com/users/290888903169146880">
-                        <i class="fab fa-brands fa-discord"></i></a>
-                </div>
-            </div>
-
-            <p>Copyright © <span id="thisyear"></span> ehozedev. All rights reserved</p>
-        </div>
-    </section>
-    <!-- End Footer Section -->
+    <footer>
+        <p>ehozedev &copy;<span class="currentYear"></span></p>
+    </footer>
 </body>
 <script>
-    let year = new Date();
-    document.getElementById('thisyear').innerHTML = year.getFullYear();
+    // Fill every empty currentYear class
+    const collection = document.getElementsByClassName("currentYear");
+    const currentYear = new Date().getFullYear();
+    Array.from(collection).forEach(item => {
+        item.innerHTML = currentYear;
+    });
 </script>
-<script src="../js/menu.js"></script>
 
 </html>

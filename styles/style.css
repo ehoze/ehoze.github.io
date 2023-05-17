@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+    --honey: #F8B224;
+    --secondColor: pink;
+    /* overflow-x: hidden; */
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+/* MOBILE */
+
+.container{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+.entry-title{
+    font-size: 2em;
+    text-align: center;
+    /* text-transform: uppercase; */
+    font-weight: 300;
+    /* text-shadow: 1px 1px 3px black; */
+    padding: 20px 0;
+}
+.secondColor{
+    color: var(--secondColor)!important;
+}
+/* Footer */
+footer{
+    display: block;
+    width:100%;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+footer p{
+    padding: 20px 0;
+}
+
+/* Hero */
+#hero{
+    background-image: url('../assets/images/hero_bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#hero .hero_animation{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#hero h1{
+    text-transform: uppercase;
+}
+#hero h1 span{
+        display: block;
+        /* width: fit-content; */
+        font-size: 1.2em;
+        position: relative;
+        color: #fff;
+        text-shadow: 2px 0 5px #000;
+        font-weight: 500;
+}
+#hero h1 span.hero_animation-author{
+    font-size: 1.5em;
+    text-shadow: none;
+    color:transparent;
+    animation: text_reveal_hero_text .5s ease forwards;
+    animation: text_reveal_hero_name .5s ease forwards 1s;
+}
+#hero h1 span.hero_animation-author span {
+    position: absolute;
+    top: 0;
+    /* left: -2px; */
+    height: 100%;
+    width: 0;
+    background-color: var(--honey);
+    animation: text_reveal_hero_box 1s ease .7s;
+}
+/* #hero h1 span:nth-child(2) {
+    animation: text_reveal_hero_name .5s ease forwards 1s;
+} */
+
+
+
+/* About */
+/* #about .about-title{
+    
+} */
+#about .about_container{
+    width: 100%;
+    height: 50%;
+}
+#about .about_container .about_container-img img{
+    height: 40vh;
+    width: 100%;
+    object-fit: contain;
+} 
+/* #about .about_container .about_container-description {
+    
+} */
+/* Portfolio */
+
+/* CV */
+#cv{
+    height: 20vh;
+}
+/* Contact */
+#contact{
+    height: 80vh;
+}
+#contact .social_container{
+    margin: auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: center;
+}
+#contact .social_container .social_container-box{
+    width: 130px;
+    height: 130px;
+    border-radius: 10px;
+    margin: 20px 2px;
+}
+#contact a{
+    color:var(--honey);
+}
+#contact a svg{
+    color:var(--honey);
+    transition: all 1s ease;
+}
+#contact a:hover svg{
+    transform: scale(1.2);
+}
+
+/* DESKTOP */
+/* .menu{
+    position: sticky;
+    width: 40%;
+    height: 100vh;
+    float: left;
+}
+.container{
+    width: 60%;
+    height: 100vh;
+    background-color: aqua;
+    position: relative;
+} */
+
+
+
+
+/* Keyframes */
+
+@keyframes text_reveal_hero_box {
+    50% {
+        width: 105%;
+        left: -2px;
+
+    }
+
+    100% {
+        width: 0;
+        left: 102%;
+    }
+}
+
+/* @keyframes text_reveal_hero_text {
+    100% {
+        color: black;
+    }
+} */
+
+@keyframes text_reveal_hero_name {
+    100% {
+        /* color: var(--honey); */
+        color:white;
+        text-shadow: 2px 0 5px #000;
+        font-weight: 700;
+    }
+}
+
+/* End Keyframes */
