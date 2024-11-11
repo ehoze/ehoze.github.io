@@ -3,6 +3,7 @@
 /* Variables */
 * {
     --honey: #F8B224;
+    /* --honey: #F910BB; */
 }
 
 /* End Variables */
@@ -42,10 +43,13 @@ p {
     line-height: 2rem;
     font-weight: 300;
     letter-spacing: .01rem;
+    /* word-wrap: break-word;
+    white-space: pre-wrap; */
+    word-break: break-word;
 }
 
 .container {
-    min-height: 100vh;
+    min-height: 60vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -85,13 +89,13 @@ p {
     background-color: var(--honey);
 }
 
-.brand h1 {
-    font-size: 2rem;
+.brand p.h1 {
+    /* font-size: 2rem; */
     text-transform: uppercase;
     color: white;
 }
 
-.brand h1 span {
+.brand p.h1 span {
     color: var(--honey);
 }
 
@@ -358,6 +362,7 @@ p {
 }
 
 #skills .skills_bottom {
+    width: 100%;
     margin-top: 50px;
     display: flex;
     align-items: center;
@@ -367,7 +372,7 @@ p {
 
 #skills .skills_item {
     min-height: 387px;
-    flex-basis: 80%;
+    flex-basis: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -412,24 +417,24 @@ p {
 }
 
 #skills .level__dot:nth-child(1)::before{
-    content: "Podstawowy";
-}
-
-#skills .level__dot:nth-child(2)::before{
     content: "Junior";
 }
 
-#skills .level__dot:nth-child(3)::before{
+#skills .level__dot:nth-child(2)::before{
     content: "Mid";
 }
 
-#skills .level__dot:nth-child(4)::before{
+#skills .level__dot:nth-child(3)::before{
+    content: "Senior";
+}
+
+/* #skills .level__dot:nth-child(4)::before{
     content: "Zaawansowany";
 }
 
 #skills .level__dot:nth-child(5)::before{
     content: "Senior";
-}
+} */
 
 #skills_html5 {
     background-image: url(../assets/skills/html5.webp);
@@ -455,6 +460,10 @@ p {
     background-image: url(../assets/skills/laravel.webp);
 }
 
+#skills_seo {
+    background-image: url(../assets/skills/seo.webp);
+}
+
 #skills .skills_item::after {
     content: '';
     position: absolute;
@@ -469,21 +478,20 @@ p {
 }
 
 .skills_icon {
-    margin-left: auto;
-    max-width: 50%;
-    margin-bottom: 5px;
+    margin: 0 auto;
+    padding: 20px 0;
 }
 
-.skills_icon h5 {
+.skills_icon p {
     font-weight: 300;
     font-size: 1rem;
 }
 
-.skills_icon i {
+.skills_icon i, .skills_icon svg {
     color: white;
     text-shadow: 0px 0px 1px black, 0px 0px 1px black, 0px 0px 1px black;
-    font-size: 2rem;
-    padding: 5px;
+    font-size: 5rem;
+    margin: 5px 10px;
 }
 
 #skills .skills_item h2 {
@@ -500,6 +508,53 @@ p {
 }
 
 /* End Skills Section  */
+
+/* Work exp */
+#work_exp .work_exp {
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+.work_exp__box{
+    width: 90%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px hsla(0, 0%, 0%, 0.2);
+    transition: all .3s ease;
+    text-align: left;
+    padding: 20px;
+}
+.work_exp__box:hover{
+    box-shadow: 0px 0px 5px hsla(0, 0%, 0%, 0.4);
+}
+.work_exp__box_companyName{
+    font-size: 1.6rem;
+    font-weight: 700;
+    /* text-shadow: 3px 2px 1px rgba(28, 28, 29, 1); */
+    padding: 10px 0 5px 0;
+}
+.work_exp__box_companyPosition{
+    font-size: .8rem;
+    text-shadow: .8px .5px 1px rgba(28, 28, 29, .3);
+}
+
+.work_exp__box_date{
+    font-size: .8rem;
+    line-height: normal;
+    margin: 0 0 10px;
+    color: var(--honey);
+}
+.work_exp__box_inner{
+ list-style: inside;
+ margin-left: 5px;
+}
+
+
+/* End Work exp */
 
 /* Projects Section */
 
@@ -548,13 +603,14 @@ p {
     font-weight: 500;
 }
 
-#projects .projects_item_info h5 {
+#projects .projects_item_info p.projects_date--p {
     margin: 10px;
     font-weight: 500;
+    font-size: .8em;
     letter-spacing: 0.1px;
 }
 
-#projects .projects_item_info h5::before {
+#projects .projects_item_info p.projects_date--p::before {
     content: '> ';
 }
 
@@ -682,7 +738,7 @@ p {
 }
 
 #contact .contact_item {
-    width: 80%;
+    width: 100%;
     padding: 20px;
     margin: 20px;
     text-align: center;
@@ -700,7 +756,7 @@ p {
 }
 
 #contact i {
-    font-size: 2rem;
+    font-size: 5rem;
     margin: 0 auto;
     margin-bottom: 10px;
 }
