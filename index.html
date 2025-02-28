@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eryk Kucharski - Portfolio & CV</title>
+    <meta name="description" content="Portfolio and CV of Eryk Kucharski, showcasing projects and professional experience">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="#home" class="nav-brand">Portfolio i CV</a>
+        <div class="nav-links">
+            <a href="#about" class="nav-link">O mnie</a>
+            <a href="#projects" class="nav-link">Projekty</a>
+            <a href="#experience" class="nav-link">Doświadczenie</a>
+            <a href="#contact" class="nav-link">Kontakt</a>
+            <button class="lang-switch" onclick="toggleLanguage()">EN</button>
+        </div>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section section">
+        <div class="hero-content">
+            <h1 class="hero-title">Cześć, jestem Eryk Kucharski</h1>
+            <p class="hero-subtitle">Programista w wielu dziedzinach</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section section">
+        <h2 class="section-title">O mnie</h2>
+        <div class="about-content">
+            <p class="about-text">Jestem pasjonatem programowania Full Stack z doświadczeniem w tworzeniu nowoczesnych aplikacji internetowych. Specjalizuję się zarówno w rozwoju frontend jak i backend, zawsze dążąc do dostarczania wysokiej jakości, skalowalnych rozwiązań.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section section">
+        <h2 class="section-title">Umiejętności</h2>
+        <div class="skills-container">
+            <div class="skills-category">
+                <h3>Umiejętności Techniczne</h3>
+                <div class="skills-grid technical-skills">
+                    <div class="skill-item">PHP</div>
+                    <div class="skill-item">MySQL</div>
+                    <div class="skill-item">HTML5</div>
+                    <div class="skill-item">CSS3</div>
+                    <div class="skill-item">JavaScript</div>
+                    <div class="skill-item">Laravel</div>
+                </div>
+            </div>
+            <div class="skills-category">
+                <h3>Umiejętności Miękkie</h3>
+                <div class="skills-grid soft-skills">
+                    <div class="skill-item">Komunikacja</div>
+                    <div class="skill-item">Praca zespołowa</div>
+                    <div class="skill-item">Rozwiązywanie problemów</div>
+                    <div class="skill-item">Zarządzanie czasem</div>
+                    <div class="skill-item">Kreatywność</div>
+                </div>
+            </div>
+            <div class="skills-category">
+                <h3>Metodologie</h3>
+                <div class="skills-grid methodologies-list">
+                    <div class="skill-item">OOP</div>
+                    <div class="skill-item">DRY</div>
+                    <div class="skill-item">KISS</div>
+                    <div class="skill-item">Git</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section section">
+        <h2 class="section-title">Doświadczenie</h2>
+        <div class="experience-content">
+            <div class="experience-item webmaster-experience">
+                <h3></h3>
+                <p class="company"></p>
+                <p class="period"></p>
+                <div class="experience-summary"></div>
+                <div class="experience-responsibilities">
+                    <h4>Główne obowiązki:</h4>
+                    <ul class="responsibilities-list"></ul>
+                </div>
+            </div>
+            <div class="experience-item intern-experience">
+                <h3></h3>
+                <p class="company"></p>
+                <p class="period"></p>
+                <p class="description"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section section">
+        <h2 class="section-title">Edukacja</h2>
+        <div class="education-content">
+            <div class="education-item university-education">
+                <h3></h3>
+                <p class="period"></p>
+                <p class="degree"></p>
+            </div>
+            <div class="education-item technical-education">
+                <h3></h3>
+                <p class="period"></p>
+                <p class="degree"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Languages Section -->
+    <section id="languages" class="languages-section section">
+        <h2 class="section-title">Języki</h2>
+        <div class="languages-content">
+            <div class="language-item">
+                <h3>Polski</h3>
+                <p>Ojczysty</p>
+            </div>
+            <div class="language-item">
+                <h3>Angielski</h3>
+                <p>B2</p>
+            </div>
+            <div class="language-item">
+                <h3>Niemiecki</h3>
+                <p>A1</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section section">
+        <h2 class="section-title">Projekty</h2>
+        <div class="projects-grid">
+            <!-- Projects will be populated by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section">
+        <h2 class="section-title">Kontakt</h2>
+        <div class="contact-content">
+            <p>Zapraszam do kontaktu</p>
+            <div class="contact-info">
+                <a href="https://github.com/ehoze" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://linkedin.com/in/eryk-kucharski" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="mailto:contact@example.com" class="social-link">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Eryk Kucharski. All rights reserved.</p>
+    </footer>
+
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
