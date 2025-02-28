@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eryk Kucharski - CV i Portfolio</title>
+    <meta name="description" content="Strona Eryka Kucharskiego, przedstawiająca jego CV oraz projekty">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="/js/font-awesome-pro.js"></script>
+    <!-- <link rel="stylesheet" href="node_modules/normalize.css/normalize.css"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/js/all.min.js"
+        integrity="sha512-jObRWaj/w03b6Dq1xdRBbWfH5QWAnKWGNC9KLNzTj6cCLJymt7atj08eQc5JSTh5IYHsP+0VPAvZhAWkmZLszg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<body>
+    <!-- <aside class="menu">
+        menu
+    </aside> -->
+    <section class="container" id="hero">
+        <h1 class="hero_animation">
+            <span>Portfolio i CV</span>
+            <span class="hero_animation-author">Eryk Kucharski<span></span></span>
+        </h1>
+    </section>
+    <section class="container" id="about">
+        <p class="entry-title">Trochę <span class="honey">o mnie</span></p>
+        <div class="about_container">
+            <div class="about_container-img"><img src="assets/images/ja.jpg" alt="Moje zdjęcie" title="Moje zdjęcie">
+            </div>
+            <div class="about_container-description">
+                <p>
+                    Cześć, miło, że tu jesteś. Mam na imię Eryk i jestem raczkującym programistą z wielkim potencjałem.
+                    Posiadam już dwuletnie doświadczenie jako webdeveloper w branży SEO, co pozwoliło mi zgłębić wiele
+                    technicznych aspektów oraz zrozumieć funkcjonowanie środowiska programistycznego. </p>
+                <p>
+                    Poza moim zaangażowaniem w prace przy komputerze oraz naukę, pasjonuję się również
+                    aktywnym trybem życia oraz spędzaniem czasu na świeżym powietrzu. Szczególnie cenię sobie
+                    wyjazdy na rowerze, długie, dalekie, w miarę możliwości, spacery. Jestem osobą otwartą na nowe
+                    doświadczenia, gotową na podjęcie się
+                    nowych wyzwań i chętną do pracy, która umożliwi mi zdobywanie nowych umiejętności.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="container" id="portfolio">
+        <p class="entry-title">Moje projekty</p>
+        <div class="portoflio_projectBox--container f f-ct">
+            <div class="portfolio_projectBox--single"><a href="#">...</a></div>
+            <div class="portfolio_projectBox--single"><a href="#">C#</a></div>
+        </div>
+    </section>
+    <section class="container" id="cv">
+        <p class="entry-title">CV</p>
+        <div class="cv_container f f-ct m-a">
+            <div class="cvbox"><a class="f f-ct f-dc" href="assets/files/CV_Eryk_Kucharski_124.pdf" target="_blank">
+                    Do przeczytania <small class="honey">(01.24)</small>
+                    <i class="m-10 fa fa-book fa-2x"></i>
+                </a>
+            </div>
+            <div class="cvbox">
+                <a class="f f-ct f-dc" href="assets/files/CV_Eryk_Kucharski_124.pdf" download>
+                    Pobierz PDF <small class="honey">(01.24)</small>
+                    <i class="m-10 fa fa-download fa-2x"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="container" id="contact">
+        <p class="entry-title"><span class="honey">Konta</span>kt</p>
+        <div class="social_container">
+            <div class="social_container-box">
+                <p><a target="_blank" href="mailto:biznes.erykkucharski@gmail.com"><i
+                            class="fa fa-envelope fa-8x"></i></a>
+                    <span class="social_container-box-label">
+                        Wyślij wiadomość email
+                    </span>
+                </p>
+            </div>
+            <div class="social_container-box">
+                <p>
+                    <a target="_blank" href="https://www.facebook.com/ehoze"><i
+                            class="fab fa-brands fa-facebook-f fa-8x"></i></a>
+                    <span class="social_container-box-label">
+                        Mój facebook
+                    </span>
+                </p>
+            </div>
+            <div class="social_container-box">
+                <p><a target="_blank" href="https://github.com/ehoze"><i
+                            class="fab fa-brands fa-github-alt fa-8x"></i></a>
+                    <span class="social_container-box-label">
+                        Moje repozytorium
+                    </span>
+                </p>
+            </div>
+            <div class="social_container-box">
+                <p><a target="_blank" href="https://linkedin.com/in/ehoze"><i
+                            class="fab fa-brands fa-linkedin fa-8x"></i></a>
+                    <span class="social_container-box-label">
+                        Jestem na LinkedIn
+                    </span>
+                </p>
+            </div>
+            <!--<div class="social_container-box">
+                <p><a target="_blank" href="https://instagram.com/ehoze_"><i
+                            class="fab fa-brands fa-instagram fa-8x"></i></a>
+                    <span class="social_container-box-label">
+
+                    </span>
+                </p>
+                <a href="https://discordapp.com/users/290888903169146880"><i class="fab fa-brands fa-discord"></i></a> 
+            </div> -->
+        </div>
+    </section>
+    <footer>
+        <p>ehozedev &copy;<span class="currentYear"></span></p>
+    </footer>
+</body>
+<script>
+    // Fill every empty currentYear class
+    const collection = document.getElementsByClassName("currentYear");
+    const currentYear = new Date().getFullYear();
+    Array.from(collection).forEach(item => {
+        item.innerHTML = currentYear;
+    });
+</script>
+
+</html>
