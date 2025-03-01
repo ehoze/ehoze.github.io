@@ -252,13 +252,30 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    padding: 0 1rem;
+    padding: 0 2rem;
     opacity: 0;
     animation: fadeInUp 1s ease 0.3s forwards;
 }
 
+@media (max-width: 768px) {
+    .skills-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+
+    .skills-category {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
 .skills-category {
     background-color: white;
     padding: 2rem;
