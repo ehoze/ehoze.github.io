@@ -252,19 +252,20 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
+    padding: 0 1rem;
     opacity: 0;
     animation: fadeInUp 1s ease 0.3s forwards;
 }
 
 .skills-category {
     background-color: white;
-    padding: 2.5rem;
+    padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: transform var(--transition-speed) ease;
-    margin: 1rem;
+    margin: 0;
 }
 
 .skills-category:hover {
