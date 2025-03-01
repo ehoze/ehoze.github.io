@@ -373,6 +373,90 @@ body {
     color: #666;
 }
 
+/* CV Section */
+.cv-section {
+    background-color: #f9f9f9;
+    padding: 5rem 2rem;
+}
+
+.cv-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cv-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 400px;
+}
+
+.cv-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.cv-icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.cv-card h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.cv-card p {
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.cv-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cv-button {
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cv-button.view {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.cv-button.download {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.cv-button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.cv-button i {
+    font-size: 1.1rem;
+}
+
 /* Projects Section */
 .projects-section {
     padding: 5rem 2rem;
