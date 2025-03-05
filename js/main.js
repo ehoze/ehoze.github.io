@@ -1,14 +1,6 @@
 // Language switching functionality
 let currentLanguage = localStorage.getItem('language') || 'pl';
 
-// Initialize language on page load
-document.addEventListener('DOMContentLoaded', () => {
-    const langButton = document.querySelector('.lang-switch');
-    langButton.textContent = currentLanguage.toUpperCase();
-    updateContent();
-    handleLoadingAnimation();
-});
-
 // Loading animation
 function handleLoadingAnimation() {
     const loader = document.querySelector('.loader-wrapper');
@@ -141,28 +133,28 @@ function updateContent() {
     document.querySelector('#projects .section-title').textContent = translations[currentLanguage].projects.title;
     populateProjects(); // Call populateProjects to update project cards with current language
 
-    // Update contact section
+    // // Update contact section
     document.querySelector('#contact .section-title').textContent = translations[currentLanguage].contact.title;
     document.querySelector('.contact-content p').textContent = translations[currentLanguage].contact.description;
     
-    // Update contact information
-    const contactInfo = document.querySelector('.contact-info');
-    if (contactInfo) {
-        contactInfo.innerHTML = `
-            <div class="contact-item">
-                <i class="fas fa-phone"></i>
-                <a href="tel:${translations[currentLanguage].contact.phone}">${translations[currentLanguage].contact.phone}</a>
-            </div>
-            <div class="contact-item">
-                <i class="fas fa-envelope"></i>
-                <a href="mailto:${translations[currentLanguage].contact.email}">${translations[currentLanguage].contact.email}</a>
-            </div>
-            <div class="contact-item">
-                <i class="fab fa-facebook"></i>
-                <a href="https://${translations[currentLanguage].contact.facebook}" target="_blank">${translations[currentLanguage].contact.facebook}</a>
-            </div>
-        `;
-    }
+    // // Update contact information
+    // const contactInfo = document.querySelector('.contact-info');
+    // if (contactInfo) {
+    //     contactInfo.innerHTML = `
+    //         <div class="contact-item">
+    //             <i class="fas fa-phone"></i>
+    //             <a href="tel:${translations[currentLanguage].contact.phone}">${translations[currentLanguage].contact.phone}</a>
+    //         </div>
+    //         <div class="contact-item">
+    //             <i class="fas fa-envelope"></i>
+    //             <a href="mailto:${translations[currentLanguage].contact.email}">${translations[currentLanguage].contact.email}</a>
+    //         </div>
+    //         <div class="contact-item">
+    //             <i class="fab fa-facebook"></i>
+    //             <a href="https://${translations[currentLanguage].contact.facebook}" target="_blank">${translations[currentLanguage].contact.facebook}</a>
+    //         </div>
+    //     `;
+    // }
 }
 
 // Mobile menu functionality
@@ -206,25 +198,25 @@ window.addEventListener('scroll', () => {
 const projects = [
     {
         title: {
-            en: 'TENSE Group Website',
-            pl: 'Strona TENSE Polska'
+            en: 'School Project "Librus"',
+            pl: 'Projekt szkolny "Librus"'
         },
         description: {
-            en: 'Specialized in website optimization using advanced SEO strategies, improving both front-end and back-end performance.',
-            pl: 'Specjalizuję się w optymalizacji stron internetowych przy użyciu zaawansowanych strategii SEO, poprawiając zarówno wydajność front-endu, jak i back-endu.'
+            en: 'A project emulating the "Librus" platform (2018) using relational databases. The website features functionality for assigning tasks to students and allowing them to respond to teachers with attachments. Includes online meeting creation capabilities.',
+            pl: 'Projekt imitujący stronę "Librus" (2018r.) z wykorzystaniem relacyjnych baz danych. Strona z możliwością zadawania zadań dla uczniów oraz odpowiadania nauczycielom dodatkowo wysyłając załączniki. Tworzenie spotkań online.'
         },
         image: 'assets/projects/projects_wizytowka.webp',
         github: 'https://github.com/ehoze',
-        demo: 'https://tense.pl'
+        demo: '#'
     },
     {
         title: {
-            en: 'SCADA System Integration',
-            pl: 'Integracja Systemu SCADA'
+            en: 'Course World - Udemy Clone',
+            pl: 'Świat Kursów - Udemy 2.0'
         },
         description: {
-            en: 'Developed and tested basic synoptics and OPC-UA library integration for SCADA PRO-2000 system in C/C++.',
-            pl: 'Poznałem oprogramowanie i systemy SCADA PRO-2000, gdzie tworzyłem podstawowe synoptyki i testowałem bibliotekę Open62541 w C/C++.'
+            en: 'Designed and implemented a comprehensive e-learning platform inspired by Udemy using the Laravel framework. The platform features advanced functionalities including online payment system, user fund management, full user account management with profile editing, and automated email notification system. Also implemented a fully functional e-commerce system with a responsive user interface, all integrated with a relational database. The project achieved significant advancement, fulfilling all key functional requirements.',
+            pl: 'Zaprojektowałem i zaimplementowałem kompleksową platformę e-learningową wzorowaną na Udemy, wykorzystując framework Laravel. Platforma oferuje zaawansowane funkcjonalności, takie jak system płatności online, zarządzanie środkami użytkownika, pełną obsługę kont użytkowników wraz z edycją profili, oraz zautomatyzowany system powiadomień e-mail. Zaimplementowano również w pełni funkcjonalny sklep internetowy z responsywnym interfejsem użytkownika, wszystko zintegrowane z relacyjną bazą danych. Projekt osiągnął znaczący poziom zaawansowania, realizując wszystkie kluczowe założenia funkcjonalne.'
         },
         image: 'assets/projects/projects_bcomp.webp',
         github: 'https://github.com/ehoze',
@@ -263,11 +255,15 @@ function populateProjects() {
 
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
-    const langButton = document.querySelector('.lang-switch');
-    langButton.textContent = currentLanguage.toUpperCase();
     populateProjects();
     updateContent();
-    handleLoadingAnimation();
+    const langButton = document.querySelector('.lang-switch');
+    langButton.textContent = currentLanguage.toUpperCase();
+    
+    // Move handleLoadingAnimation to the end
+    setTimeout(() => {
+        handleLoadingAnimation();
+    }, 500);
 });
 
-// Remove the duplicate initialization at the top of the file
+// Remove any duplicate initialization code

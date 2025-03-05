@@ -8,12 +8,12 @@ const translations = {
             contact: "Contact"
         },
         hero: {
-            title: "Hi, I'm Eryk Kucharski",
-            subtitle: "Programmer in many fields"
+            title: "Hi, I'm Eric",
+            subtitle: "I'm a little bit of a programmer myself :)"
         },
         about: {
             title: "About Me",
-            description: "I am a passionate Full Stack Developer with experience in creating modern web applications. I specialize in both frontend and backend development, always striving to deliver high-quality, scalable solutions."
+            description: "<p>As a graduate of a technical IT school with professional certification (2022) and a current computer science student, I possess solid theoretical and practical foundations in IT. For three years, I have been working as a Web Developer and Webmaster in a company specializing in SEO optimization, where I systematically develop competencies in creating advanced web solutions and implementing optimization strategies.</p><p>Additionally, I work on IoT and home automation projects using microcontroller technologies. In my personal life, I value physical activity, particularly volleyball, and maintain work-life balance through regular walks. I am characterized by strong interpersonal skills and a proactive approach to collaboration with others.</p>"
         },
         skills: {
             title: "Skills",
@@ -21,14 +21,14 @@ const translations = {
             soft: "Soft Skills",
             methodologies: "Methodologies",
             technicalList: [
-                "HTML5/CSS3",
-                "JavaScript/TypeScript",
-                "PHP/Laravel",
-                "MySQL/PostgreSQL",
+                "PHP",
+                "MySQL",
+                "HTML5",
+                "CSS3",
+                "JavaScript",
+                "Laravel",
                 "Git/GitHub",
-                "SEO Optimization",
-                "C/C++",
-                "Python"
+                "SEO Optimization"
             ],
             softList: [
                 "Problem Solving",
@@ -37,14 +37,12 @@ const translations = {
                 "Time Management",
                 "Adaptability",
                 "Critical Thinking",
-                "Leadership",
                 "Creativity"
             ],
             methodologiesList: [
-                "Agile/Scrum",
-                "Kanban",
-                "CI/CD",
-                "Test-Driven Development"
+                "OOP",
+                "DRY",
+                "KISS"
             ]
         },
         experience: {
@@ -110,8 +108,8 @@ const translations = {
             contact: "Kontakt"
         },
         hero: {
-            title: "Cześć, jestem Eryk Kucharski",
-            subtitle: "Programuję w wielu dziedzinach"
+            title: "Cześć, jestem Eryk",
+            subtitle: "Trochę programuję :)"
         },
         about: {
             title: "O mnie",
